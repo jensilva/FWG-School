@@ -1,7 +1,7 @@
 const matrizIdentidade = numero =>{
 	let matriz = "";
-	for(coluna=0; coluna<numero;coluna++){
-		for(linha=0; linha<numero; linha++ ){
+	for(let coluna=0; coluna<numero;coluna++){
+		for(let linha=0; linha<numero; linha++ ){
 			matriz += linha===coluna ? "1":"0";
 		}
 		 matriz+="\n";
