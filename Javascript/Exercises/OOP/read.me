@@ -1,0 +1,44 @@
+Regras: 
+- Quando instanciado o objeto sem passar o tempo (hora, minuto, segundo), utilize o tempo do dispositivo das pessoas.
+- Indentificar se os horarios são invalidos, se forem, exiba o tempo do dispositivo das pessoas.
+
+Quero instanciar um objeto relogio que eu possa selecionar:
+- Hora Inicial
+- Despertador
+- Cronometro
+- Regressivo
+- Normal 
+- Ligar o relógio
+- Desligar o relógio 
+
+Quero que eu possa exibir:
+- Hora completa ex:(14:26:56)
+- Segundos
+- Minutos
+- Horas
+- Cronometro
+- Quanto tempo falta para despertar
+
+Dicas:
+- SetInterval = Faz uma função / Codigos em tempos de intervalo.
+- Para parar o interval, utilize clearInterval(Variavel do Interval).
+- SetTimeout = Faz uma função depois de um certo tempo.
+- Para pegar as horas da maquina: new Date().getHours().
+- Para pegar o minutos da maquina: new Date().getMinutes().
+- Para pegar o segundos da maquina: new Date().getSeconds().
+
+Exemplo de uso:
+// Inicia o Interval.
+const variableInterval = setInterval(() => {
+//.. Some code
+}, time)
+
+// Inicia uma função após o tempo de delay.
+const variableInterval = setInterval(function(){
+//.. Some code
+}, time)
+/
+
+// Limpa o interval
+clearInterval(variableInterval)
+*********************************************************
