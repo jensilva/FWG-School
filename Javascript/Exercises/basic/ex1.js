@@ -1,4 +1,4 @@
-<script>
+
   /*Escreva um laço de repetição que chamará 7 vezes o console.log e terá uma saída como essa:
  
             #
@@ -17,4 +17,4 @@
   for (let contador = "#"; contador.length < 8; contador += "#") {
     console.log(contador);
   }
-</script>
+
