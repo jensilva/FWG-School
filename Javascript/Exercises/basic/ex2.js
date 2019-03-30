@@ -1,4 +1,4 @@
-<script>
+
   /*Escreva um programa que chame o console.log para imprimir do número 1 ao 100, com duas exceções. 
   Para números divisíveis por 3, printe “Fizz” invés do número, e para números divisíveis por 5, printe “Buzz”
  */
@@ -12,4 +12,4 @@
       console.log(contador);
     }
   }
-</script>
+
