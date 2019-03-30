@@ -1,4 +1,4 @@
-<script>
+
   /** Escreva um programa que reprsente uma grade de 8x8, usando quebras de linha. 
 A cada “#” deve ter um espaço em branco, como um tabuleiro de xadrez. 
 Utilizando o console.log deve ficar como isso: 
@@ -26,4 +26,4 @@ Utilizando o console.log deve ficar como isso:
     }
     console.log(quadrado);
   }
-</script>
+
