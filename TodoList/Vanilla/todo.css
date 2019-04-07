@@ -22,9 +22,11 @@ header h4 {
 
 header {
   border-bottom: 1px solid #dfdfdf;
+  margin-bottom: 50px;
 }
 
-#todo-list {
+
+main section {
   border: 1px solid #dfdfdf;
   width: 800px;
   margin: auto;
@@ -32,10 +34,6 @@ header {
   padding-bottom: 15px;
   border-radius: 3%;
   height: 663px;
-}
-
-main section:first-child {
-  margin: 50px;
 }
 
 .checks {
@@ -61,7 +59,7 @@ ul {
   padding-left: 0px;
 }
 
-ul li:not(:first-child) {
+ul li {
   height: 40px;
   border: 1px solid #dfdfdf;
   margin: 14px 19px 0 23px;
@@ -84,4 +82,14 @@ ul li:not(:first-child) {
 .box:hover {
   background: #2cf046d7;
   border: 1px solid #000;
+}
+
+.box-active {
+  background: #e21010;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.scratched {
+  text-decoration: line-through;
+  background: #e2101012;
 }
