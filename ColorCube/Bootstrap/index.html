@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <!-- Required meta tags -->
+    <title>Color Cube</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./dependencies/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./common/common.js"></script>
+  </head>
+  <body>
+
+    <main class="container">
+        <div class="row">
+           <div class="col-12">
+               <h1 class="display-4 text-center my-5">Color Cube</h1>
+
+               <div class="input-group">
+                   <input type="text" class="form-control" onkeyup="filter(event)">
+                    <div class="input-group-append">
+                        <a class="btn btn-outline btn-color" href="./insert-colors/add-color.html"> + </a>
+                    </div>
+               </div>
+           </div>
+        </div>
+
+        <div id="color-cubes" class="row justify-content-between mx-auto">
+        </div>
+
+    </main>
+
+    <!-- Optional JavaScript -->
+    <script src="dependencies/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+    
+  </body>
+</html>

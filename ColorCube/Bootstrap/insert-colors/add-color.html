@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <!-- Required meta tags -->
+    <title>Cor</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../dependencies/css/bootstrap.min.css"/>
+    <script src="../common/common.js"></script>
+  </head>
+  <body>
+
+    <main class="container">
+        <div class="row">
+           <div class="col-12">
+               <h1 id="title"></h1>
+               <form>
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" class="form-control" id="color-name" placeholder="Insira o nome da cor" required>
+                </div>
+                <div class="form-group">
+                    <label for="color-picker">Cor</label>
+                    <div class="row">
+                        <div class="col">
+                            <input type="color" class="form-control" id="color-picker" value="#6C41FF" onchange="setInputColor()">
+                        </div>
+                    <div class="col">
+                         <input type="text" class="form-control" id="color-code" placeholder="Coloque o código da cor" disabled>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group text-center mt-5">
+                    <button class="btn btn-danger" onclick="cancel(event)">Cancelar</button>
+                    <button class="btn btn-success" onclick="save(event)">Salvar</button>
+                </div>
+              </form>
+           </div>
+    </main>
+
+    <!-- Optional JavaScript -->
+    <script src="../dependencies/js/bootstrap.min.js"></script>
+    <script src="add-color.js"></script>
+    
+  </body>
+</html>

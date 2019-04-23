@@ -1,0 +1,10 @@
+.cube {
+    height: 14rem;
+    border: 1px solid #000
+}
+
+.btn-color {
+    background-color: #8C2EE8;
+    color: white;
+    font-weight: bold;
+}
