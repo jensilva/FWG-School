@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Agenda de Contatos</title>
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4"> <i class="fas fa-address-card"></i> Agenda</h1>
+          <p class="lead">Adicione, consulte e edite sua lista de contatos 
+              <i data-toggle="modal" data-backdrop="static" data-target="#contact-window" id="add-icon" class="fas fa-plus-circle h1"></i>
+        </p>
+        </div>
+      </div>
+<div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="list-group" id="list-tab" role="tablist">
+          </div>
+        </div>
+        <div class="col">
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="list-home" role="tabpanel">
+                    <section id="contact-details" class="mb-4">
+                            
+          </div>
+        </div>
+      </div>
+</div>
+
+
+   <!-- ADD CONTACT -->
+<div class="modal fade" id="contact-window">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Novo Contato</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <i class="fas fa-user"></i>
+                  <label for="contact-name" class="col-form-label">Nome:</label>
+                  <input type="text" class="form-control" id="contact-name" placeholder="João Ninguém" required>
+                </div>
+                <div class="form-group">
+                  <i class="fas fa-phone-square-alt"></i>
+                  <label for="contact-number" class="col-form-label">Numero:</label>
+                  <input type="tel" class="form-control" id="contact-number" placeholder="(DD) 9999 - 9999">
+                </div>
+                <div class="form-group">
+                        <i class="fas fa-envelope"></i>
+                        <label for="contact-email" class="col-form-label">Email:</label>
+                        <input type="email" class="form-control" id="contact-email" placeholder="exemplo@exemplo.com">
+                      </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-success">Adicionar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>    
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
