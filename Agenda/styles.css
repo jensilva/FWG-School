@@ -1,0 +1,21 @@
+#add-icon {
+    margin-left: 2rem;
+    color: #4FBDA9;
+    cursor: pointer;
+}
+
+#remove{
+    color: #C33E31;
+    cursor: pointer;
+}
+
+#edit{
+    cursor: pointer;
+}
+
+.list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: #000000;
+    border-color: #acb1b6;
+}
