@@ -19,17 +19,19 @@
         </p>
         </div>
       </div>
+         
 <div class="container">
       <div class="row">
         <div class="col">
           <div class="list-group" id="list-tab" role="tablist">
+            <!-- Lista de contatos -->
           </div>
         </div>
         <div class="col">
           <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active" id="list-home" role="tabpanel">
                     <section id="contact-details" class="mb-4">
-                            
+                             <!-- Detalhes de contatos -->
           </div>
         </div>
       </div>
@@ -47,7 +49,7 @@
               </button>
             </div>
             <div class="modal-body">
-              <form>
+              <form action="javascript:void(0)" id="contact-data">
                 <div class="form-group">
                   <i class="fas fa-user"></i>
                   <label for="contact-name" class="col-form-label">Nome:</label>
@@ -56,7 +58,7 @@
                 <div class="form-group">
                   <i class="fas fa-phone-square-alt"></i>
                   <label for="contact-number" class="col-form-label">Numero:</label>
-                  <input type="tel" class="form-control" id="contact-number" placeholder="(DD) 9999 - 9999">
+                  <input type="tel" class="form-control" id="contact-number" placeholder="(00) 9999 - 9999">
                 </div>
                 <div class="form-group">
                         <i class="fas fa-envelope"></i>
@@ -66,8 +68,8 @@
               </form>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
-              <button type="button" class="btn btn-success">Adicionar</button>
+              <button  class="btn btn-danger" data-dismiss="modal">Cancel</button>
+              <button id="modify" class="btn btn-success">Adicionar</button>
             </div>
           </div>
         </div>
