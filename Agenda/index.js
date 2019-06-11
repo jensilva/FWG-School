@@ -70,15 +70,14 @@ $('#contact-window').on('shown.bs.modal', () => {
   };
   
   data = JSON.stringify(personData);
-  nextID = document.getElementsByClassName('list-group-item').length;
-  saveContact(data, nextID);
+  saveContact(data);
   $("#contact-data").trigger('reset');
   $("#contact-window").modal('hide')
   } );
 });
 
 
-const saveContact = (personDetails, nextID) =>{
+const saveContact = (personDetails) =>{
   $.ajax({
     type: "POST", 
     url: "http://localhost:3000/contacts/",
