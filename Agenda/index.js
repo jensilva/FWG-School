@@ -1,6 +1,50 @@
 
 
 
+// Remover contato
+
+const removeContact = (id, personDetails) => {
+
+  $.ajax({
+    type: "DELETE", 
+    url: `http://localhost:3000/contacts/${id}`,
+    contentType: "application/json; charset=utf-8",
+    data: personDetails,
+    error: function() {
+        $("h2").html("O servidor não conseguiu processar o pedido");
+    },
+    success: () => {
+      $("#list-tab").empty();
+      getContactList();
+    } 
+});
+
+}
+
+//Capturar via ID no click
+
+const getContact = (id) => {
+  $.get(`http://localhost:3000/contacts/${id}`, person => {
+    
+   const personDetails = person;
+   const{ id, name, phone, email} = person;
+
+  $("#contact-details").html (` 
+    <h4 class="mb-3">${name}</h4>    
+                          <div class="mb-1">Celular: ${phone}</div>
+                          <div class="mb-4">Email: ${email}</div>
+                      </section>
+                          <span id="user-actions">
+                                  <i  id= "edit" data-toggle="modal" data-backdrop="static" data-target="#contact-window" class="fas fa-user-edit h4"></i>
+                                  <i  id="remove" onclick= removeContact('${id}') class="fas fa-trash-alt h4 ml-4"></i>
+                          </span>
+    `)
+ })
+  removeContact(id, personDetails); 
+  }
+
+
+
   // Capturar lista existente db
   const getContactList = () =>{
 
@@ -34,27 +78,6 @@
 
   getContactList();
 
-   //Capturar via ID no click
-
-   const getContact = (id) => {
-    $.get(`http://localhost:3000/contacts/${id}`, person => {
-
-      const{ name, phone, email} = person;
-
-    $("#contact-details").html (` 
-      <h4 class="mb-3">${name}</h4>    
-                            <div class="mb-1">Celular: ${phone}</div>
-                            <div class="mb-4">Email: ${email}</div>
-                        </section>
-                            <span id="user-actions">
-                                    <i  id= "edit" data-toggle="modal" data-backdrop="static" data-target="#contact-window" class="fas fa-user-edit h4"></i>
-                                    <i  id="remove" class="fas fa-trash-alt h4 ml-4"></i>
-                            </span>
-      `)
-   })
-    }
-
-
     
 //Adicionar novo contato
 
@@ -70,7 +93,8 @@ $('#contact-window').on('shown.bs.modal', () => {
   };
   
   data = JSON.stringify(personData);
-  saveContact(data);
+  nextID = document.getElementsByClassName('list-group-item').length;
+  saveContact(data, nextID);
   $("#contact-data").trigger('reset');
   $("#contact-window").modal('hide')
   } );
@@ -92,11 +116,12 @@ const saveContact = (personDetails) =>{
     } 
 });  
 
+
+
 /* TODO
 
 VALIDAR FORM
 EDITAR
-REMOVER
 
 */
 
