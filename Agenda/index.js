@@ -26,7 +26,6 @@ const removeContact = (id, personDetails) => {
 const getContact = (id) => {
   $.get(`http://localhost:3000/contacts/${id}`, person => {
     
-   const personDetails = person;
    const{ id, name, phone, email} = person;
 
   $("#contact-details").html (` 
@@ -40,6 +39,7 @@ const getContact = (id) => {
                           </span>
     `)
  })
+  const personDetails = person;
   removeContact(id, personDetails); 
   }
 
@@ -84,7 +84,10 @@ const getContact = (id) => {
 $('#contact-window').on('shown.bs.modal', () => {
   $('#contact-name').trigger('focus');
   
-  $("button#modify").click( () => {
+
+});
+
+$("button#modify").click( () => {
 
   const personData = {
     name: $("#contact-name").val(),
@@ -98,7 +101,6 @@ $('#contact-window').on('shown.bs.modal', () => {
   $("#contact-data").trigger('reset');
   $("#contact-window").modal('hide')
   } );
-});
 
 
 const saveContact = (personDetails) =>{
