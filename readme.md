@@ -1,0 +1,2 @@
+npx jasmine
+npm test
