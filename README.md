@@ -1,8 +1,7 @@
 # FWG-School
 
 ## Disclaimer
-This repo belongs to FWG School Sunday study group. It covers web Front-End development from pure JS, 
-HTML, CSS, JS Frameworks, Styles Frameworks. The projects are listed conform class progress.
+This repo belongs to FWG School Sunday study group. It covers web Front-End development with technologies: Javascript, HTML, CSS, Javascript Frameworks and Styles Frameworks. The projects are listed according to class progress.
 
 It contains different projects such as:
 
@@ -17,6 +16,9 @@ It contains different projects such as:
 
 This project is a simple to-do task list with progress status, made in Vanilla Javascript and CSS.
 
+### To run
+Just download the files, no server needed.
+
 ### To be implemented
 Save the tasks at localStorage.
 
@@ -24,14 +26,11 @@ Save the tasks at localStorage.
 ![alt text](http://i64.tinypic.com/2yjqb93.png, "ColorCube")
 
 This project is a CRUD at Local Storage, made in Vanilla Javascript with the libraries: Bootstrap & JQUERY.
-You can search by color´s name. If you click the color cube, you can see the details and edit it. To add a new color, 
+You can search by colour's name. If you click the color cube, you can see the details and edit it. To add a new color, 
 just click at the **plus** button.
 
-### To install the project
-```npm i ```
-
 ### To run
-```npm run db```
+Just download the files, no server needed.
 
 # Agenda
 ![alt text](http://i68.tinypic.com/2wptb9k.png, "Agenda")
