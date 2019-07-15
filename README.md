@@ -38,6 +38,10 @@ Just download the files, no server needed.
 This project is a simple contact list, made in Vanilla Javascript with the libraries: Bootstrap, JQUERY & Font Awesome.
 It runs at the nodeJS environment with JSON-server for mock purposes.
 
+### To be implemented
+- Edit Feature
+- Form Validation
+
 ### To install the project
 ```npm i ```
 
