@@ -10,6 +10,7 @@ It contains different projects such as:
 * Color Cube: CRUD at local storage & details page.
 * Tour of Heroes: Hello world from Angular 8
 * JS Logic exercises
+____
 
 ### To-do List
 ![alt text](http://i64.tinypic.com/2lb0rd5.png, "Todo")
@@ -21,6 +22,7 @@ Just download the files, no server needed.
 
 #### To be implemented
 Save the tasks at localStorage.
+____
 
 ### ColorCube
 ![alt text](http://i64.tinypic.com/2yjqb93.png, "ColorCube")
@@ -31,6 +33,7 @@ just click at the **plus** button.
 
 #### To run
 Just download the files, no server needed.
+____
 
 ### Agenda
 ![alt text](http://i68.tinypic.com/2wptb9k.png, "Agenda")
@@ -47,14 +50,18 @@ It runs at the nodeJS environment with JSON-server for mock purposes.
 
 #### To run
 ```npm run db```
+____
 
 ### How to test
 
 It's an introduction for unit testing with Jasmine and TDD. Has a file with basic math functions, and case tests for it.
 
 #### To install the project
-```npm i 
-npx jasmine```
+
+
+    npm i 
+    npx jasmine
+
 
 #### To run
 ```npm test```
