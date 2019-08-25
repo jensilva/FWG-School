@@ -7,3 +7,17 @@ Shipping Prices</a>
     <span>{{item.name}}</span>
     <span>{{item.price | currency}}</span>
 </div>
+
+<form #form="ngForm" (ngSubmit)="onSubmit(form); form.reset()" novalidate>
+    <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" ngModel name="name" required>
+    </div>
+
+    <div>
+        <label for="address">Address</label>
+        <input type="text" id="address" ngModel name="address" required>
+    </div>
+    <button class="button" type="submit" [disabled]="form.invalid">Purchase</button>
+
+</form>
