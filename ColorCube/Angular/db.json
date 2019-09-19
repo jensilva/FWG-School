@@ -1,0 +1,14 @@
+{
+  "colors": [
+    {
+      "name": "branco",
+      "color": "#FFFFFF",
+      "id": 1
+    },
+    {
+      "name": "roxo",
+      "color": "#800080",
+      "id": 2
+    }
+  ]
+}

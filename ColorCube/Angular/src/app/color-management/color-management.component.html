@@ -1,0 +1,39 @@
+<h1>Cadastrar Cor</h1>
+<form #form="ngForm" (ngSubmit)="onSubmit(form)" novalidate>
+    <div class="form-group">
+        <label for="name">Nome:</label>
+        <input ngModel id="name" type="text" class="form-control"  name="name" placeholder="Insira uma cor..." required>
+    </div>
+    
+    <div class="form-group">
+        <label for="color">Color:</label>
+        <div class="row">
+
+            <div class="col">
+                <input [(ngModel)]="color" 
+                id="color-picker" type="color" 
+                class="form-control" value="#FFFFFF" 
+                name="color"  
+                placeholder="Insira uma cor..." required>
+            </div>
+
+            <div class="col">
+                <input  [value]="color" id="color-picker" type="text" class="form-control"  disabled>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="form-group text-center mt-5">
+        <button class="btn btn-danger mx-1"(click)="showModal=!showModal">Cancelar</button>
+        <button class="btn btn-success" [disabled]="form.invalid">Salvar</button>
+     
+    </div>
+</form>
+
+<app-dialog 
+[show]="showModal" 
+link="/list" 
+title="Você realmente deseja cancelar?" 
+text = "Cancelar o fará perder as alterações. Deseja continuar?">
+</app-dialog>

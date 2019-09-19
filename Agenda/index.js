@@ -83,8 +83,6 @@ const getContact = (id) => {
 
 $('#contact-window').on('shown.bs.modal', () => {
   $('#contact-name').trigger('focus');
-  
-
 });
 
 $("button#modify").click( () => {
@@ -122,6 +120,7 @@ const saveContact = (personDetails) =>{
 
 /* TODO
 
+Resetar dados modal
 VALIDAR FORM
 EDITAR
 
