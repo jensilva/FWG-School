@@ -11,9 +11,9 @@
       "id": 2
     },
     {
-      "name": "azul",
-      "color": "#0080ff",
-      "id": 3
+      "id": 3,
+      "name": "amarelo",
+      "color": "#ffff80"
     }
   ]
 }
