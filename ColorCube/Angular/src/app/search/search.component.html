@@ -1,6 +1,6 @@
 
 <div class="input-group mb-3">
-    <input type="text" class="form-control" placeholder="Search...">
+    <input type="text" class="form-control" placeholder="Search..." (ngModelChange)="filterColors(listColors, $event)">
     <div class="input-group-append">
       <a href="#" [routerLink]="['/add-color']" class="btn btn-success" id="add-button">+</a >
     </div>

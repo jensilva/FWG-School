@@ -9,6 +9,7 @@ import { Color } from '../color-cube/color-cube.interface';
 })
 export class ColorCubeListComponent implements OnInit {
   public colors: Color[];
+  public filteredColors: Color[];
 
   constructor(private colorCubeService: ColorCubeService) {}
 
@@ -22,5 +23,9 @@ export class ColorCubeListComponent implements OnInit {
         console.log(err);
       }
     );
+  }
+
+  onFilteredColors(colors: Color[]) {
+    this.filteredColors = colors;
   }
 }

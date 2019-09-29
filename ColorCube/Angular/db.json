@@ -9,6 +9,11 @@
       "name": "roxo",
       "color": "#800080",
       "id": 2
+    },
+    {
+      "name": "",
+      "color": "#FFFFFF",
+      "id": 3
     }
   ]
 }
