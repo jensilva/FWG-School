@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Color } from './color-cube.interface';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-color-cube',
@@ -9,7 +10,11 @@ import { Color } from './color-cube.interface';
 export class ColorCubeComponent implements OnInit {
   @Input() color: Color;
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit() {}
+
+  editColor(id: number) {
+    this.router.navigate(['colors', id]);
+  }
 }

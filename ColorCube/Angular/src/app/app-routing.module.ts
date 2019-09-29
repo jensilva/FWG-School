@@ -6,6 +6,7 @@ import { ColorManagementComponent } from './color-management/color-management.co
 const routes: Routes = [
   { path: 'list', component: ColorCubeListComponent },
   { path: 'add-color', component: ColorManagementComponent },
+  { path: 'colors/:id', component: ColorManagementComponent },
   { path: '**', redirectTo: 'list' }
 ];
 

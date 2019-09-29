@@ -21,4 +21,16 @@ export class ColorCubeService {
   public getColors(): Observable<Color[]> {
     return this.http.get<Color[]>(this.colorAPI);
   }
+
+  public getColor(id: number): Observable<Color> {
+    return this.http.get<Color>(`${this.colorAPI}/${id}`);
+  }
+
+  public editColor(id: number, name: string, color: string) {
+    return this.http.put<void>(`${this.colorAPI}/${id}`, {
+      id,
+      name,
+      color
+    });
+  }
 }
