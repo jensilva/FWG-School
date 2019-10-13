@@ -20,7 +20,7 @@ export class ColorCubeListComponent implements OnInit {
       },
       err => {
         this.colors = [];
-        console.log(err);
+        console.error(err);
       }
     );
   }
