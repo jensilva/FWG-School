@@ -1,0 +1,36 @@
+<mat-vertical-stepper [linear]="true" #stepper>
+    <mat-step [stepControl]="firstFormGroup">
+      <form #firstFormGroup="ngForm">
+        <ng-template matStepLabel>Insira seu username</ng-template>
+        <mat-form-field>
+          <input matInput placeholder="Your username" #username="ngModel" ngModel name="username"required>
+        </mat-form-field>
+        <div>
+          <button mat-raised-button matStepperNext color="accent">Próximo</button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step [stepControl]="secondFormGroup">
+      <form #secondFormGroup="ngForm">
+        <ng-template matStepLabel>Insira seu password</ng-template>
+        <mat-form-field>
+          <input  type="password" matInput ngModel placeholder="Password" #password="ngModel" name="password"  required>
+        </mat-form-field><br/>
+        <mat-form-field>
+            <input type="password" matInput placeholder="Confirm your password" ngModel name="confirmation"[appValidatePassword]="password.value" [appValidateEqual]="password.value"  required>
+          </mat-form-field>
+        <div>
+          <button mat-raised-button matStepperPrevious color="accent">Voltar</button>
+          <button mat-raised-button matStepperNext color="accent" (click)="registerUser(username.value, password.value)">Próximo</button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>Feito!</ng-template>
+      <a routerLink="/login" >Você agora está registrado. Entre na sua conta</a>
+      <div>
+        <button mat-raised-button matStepperPrevious>Voltar</button>
+        <button mat-raised-button (click)="stepper.reset()">Reset</button>
+      </div>
+    </mat-step>
+  </mat-vertical-stepper>
