@@ -1,12 +1,12 @@
-import { Injectable } from "@angular/core";
-import { HttpClient } from "@angular/common/http";
-import { Observable } from "rxjs";
-import { find, filter } from "rxjs/operators";
-import { User } from "app/interface/user.interface";
-import { environment } from "@env";
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { find, filter } from 'rxjs/operators';
+import { User } from 'app/interface/user.interface';
+import { environment } from '@env';
 
 @Injectable({
-  providedIn: "root"
+  providedIn: 'root'
 })
 export class LoginService {
   constructor(private http: HttpClient) {}

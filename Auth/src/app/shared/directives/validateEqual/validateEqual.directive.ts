@@ -1,13 +1,13 @@
-import { Directive, Input } from "@angular/core";
+import { Directive, Input } from '@angular/core';
 import {
   Validator,
   AbstractControl,
   ValidationErrors,
   NG_VALIDATORS
-} from "@angular/forms";
+} from '@angular/forms';
 
 @Directive({
-  selector: "[appValidateEqual][ngModel]",
+  selector: '[appValidateEqual][ngModel]',
   providers: [
     {
       provide: NG_VALIDATORS,

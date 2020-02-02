@@ -1,6 +1,6 @@
-import { NgModule } from "@angular/core";
-import { ValidateEqualDirective } from "./validateEqual/validateEqual.directive";
-import { ValidatePasswordDirective } from "./validatePassword.directive";
+import { NgModule } from '@angular/core';
+import { ValidateEqualDirective } from './validateEqual/validateEqual.directive';
+import { ValidatePasswordDirective } from './validatePassword.directive';
 
 const directives = [ValidateEqualDirective, ValidatePasswordDirective];
 

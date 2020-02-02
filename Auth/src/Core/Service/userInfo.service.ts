@@ -1,11 +1,11 @@
-import { Injectable } from "@angular/core";
-import { HttpClient } from "@angular/common/http";
-import { Observable, BehaviorSubject } from "rxjs";
-import { User } from "app/interface/user.interface";
-import { environment } from "@env";
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable, BehaviorSubject } from 'rxjs';
+import { User } from 'app/interface/user.interface';
+import { environment } from '@env';
 
 @Injectable({
-  providedIn: "root"
+  providedIn: 'root'
 })
 export class UserInformationService {
   private users$: BehaviorSubject<User> = new BehaviorSubject(undefined);

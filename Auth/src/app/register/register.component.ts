@@ -1,11 +1,11 @@
-import { Component, OnInit } from "@angular/core";
-import { RegisterService } from "./register.service";
-import { Router } from "@angular/router";
+import { Component, OnInit } from '@angular/core';
+import { RegisterService } from './register.service';
+import { Router } from '@angular/router';
 
 @Component({
-  selector: "app-register",
-  templateUrl: "./register.component.html",
-  styleUrls: ["./register.component.scss"]
+  selector: 'app-register',
+  templateUrl: './register.component.html',
+  styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent implements OnInit {
   constructor(
@@ -19,7 +19,7 @@ export class RegisterComponent implements OnInit {
     const user = { username, password };
     this.registerService.createUser(user).subscribe(
       () => {
-        this.router.navigate(["/auth"]);
+        this.router.navigate(['/auth']);
       },
       err => {
         console.error(err);
