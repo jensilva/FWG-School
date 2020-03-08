@@ -5,5 +5,32 @@
       "password": "1234",
       "id": 1
     }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "Profile Update",
+      "text": "Acaba de atualizar sua foto de perfil",
+      "image": {
+        "src": "https://tinyurl.com/sjq5ja3",
+        "alt": "dog receiving love and smiling with his tongue out"
+      },
+      "author": {
+        "id": 1,
+        "username": "jensilva"
+      },
+      "interaction": {
+        "like": {
+          "counter": 0,
+          "checked": false
+        },
+        "comments": {
+          "counter": 3
+        },
+        "share": {
+          "counter": 5
+        }
+      }
+    }
   ]
 }

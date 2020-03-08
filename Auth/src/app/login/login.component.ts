@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { LoginService } from './login.service';
-import { Router } from '@angular/router';
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-login',
@@ -21,11 +21,14 @@ export class LoginComponent implements OnInit {
           localStorage.setItem('user', user[0].id.toString());
           this.router.navigate(['/dashboard']);
         }
-        console.log('oi', user);
       },
       err => {
         console.error(err);
       }
     );
   }
+
+  // public logoutUser() {
+  //   this.loginService.logout();
+  // }
 }

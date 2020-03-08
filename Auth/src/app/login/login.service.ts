@@ -28,4 +28,8 @@ export class LoginService {
   public login(user: User): Observable<User> {
     return this.mockLogin(user);
   }
+
+  public logout(user: User) {
+    localStorage.removeItem('user');
+  }
 }

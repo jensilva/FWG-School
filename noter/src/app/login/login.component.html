@@ -1,0 +1,23 @@
+<ActionBar title ="Groceries"class=""></ActionBar>
+
+<FlexboxLayout>
+    <StackLayout class="form">
+        <Image src="~/app/images/logo.png"></Image>
+        <TextField
+        class="input input-border"
+        hint="Email Address"
+        keyboardType="email"
+        autocorrect="false"
+        autocapitalizationType="none">
+        </TextField>
+
+        <TextField
+        class="input input-border"
+        hint="Password"
+        secure="true">
+        </TextField>
+
+        <Button class="btn btn-primary" text="Sign in" (tap)="submit()"></Button>
+        <Button text="Sign up for Groceries"></Button>
+    </StackLayout>
+</FlexboxLayout>
