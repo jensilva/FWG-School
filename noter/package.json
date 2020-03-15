@@ -1,6 +1,6 @@
 {
   "nativescript": {
-    "id": "com.fwgschool.noter",
+    "id": "com.fwgschool.Groceries",
     "tns-android": {
       "version": "6.4.1"
     },
@@ -11,6 +11,11 @@
   "description": "NativeScript Application",
   "license": "SEE LICENSE IN <your-license-filename>",
   "repository": "<fill-your-repository-here>",
+  "scripts": {
+    "start": "npm run start:android",
+    "start:ios" : "tns run ios",
+    "start:android": "tns run android"
+  },
   "dependencies": {
     "@angular/animations": "~8.2.0",
     "@angular/common": "~8.2.0",
