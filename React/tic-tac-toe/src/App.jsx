@@ -1,12 +1,8 @@
 import React from 'react';
+import Game from "./components/game";
 
 
-export const App = () => {
-  return(
-    <div>
-        <h1> Hello World</h1>
-    </div>
-  )
-}
+export const App = () => <Game/>
+
 
 export default App;
