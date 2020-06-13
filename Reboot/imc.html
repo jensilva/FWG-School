@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMC</title>
+</head>
+<body>
+  <h1>Calcule sua gordura corporal</h1>
+  <script>
+    const name = prompt('Como se chama?');
+    const weight = +prompt('Quanto você pesa?');
+    const height = +prompt('Qual a sua altura?');
+    let imc = 0;
+    let situation = '';
+
+    function calcImc(weight, height){
+     imc = weight / (height * height);
+      return imc;
+    }
+
+    calcImc(weight,height);
+
+    switch(imc){
+      case  >18.5:
+      situation ='Magreza';
+      break;
+      case 18,5 < 24.9:
+      situation ='Normal'
+      break;
+      case 25 < 29,9:
+      situation ='Sobrepeso'
+      break;
+      case 30 < 34,9:
+      situation ='Obesidade I'
+      break;
+      case 35 < 40:
+      situation ='Obesidade II'
+      break;
+      case imc > 40:
+      situation ='Obesidade III'
+      break;
+
+      default:
+      situation = 'Error'
+      break;
+    }
+
+    document.write(`${name} está com ${imc.toFixed(2)} de gordura corporal
+      e sua situação é ${situation}`);
+
+    // Menor que 18,5 magreza
+    // entre 18,5 e 24,9 normal
+    // entre 25,0 e 29,9 sobrepeso
+    // entre 30 a 34,9 obesidade I
+    // entre 35 a 40 obesidade II
+    // maior que 40 obesidade III
+  </script>
+</body>
+</html>
