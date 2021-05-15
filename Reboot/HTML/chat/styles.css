@@ -1,0 +1,127 @@
+* {
+    font-family: 'Segoe Pro Display', sans-serif;
+}
+
+#chat {
+    width: 360px;
+    height: 500px;
+}
+
+#chat > header {
+    display: flex;
+    background-color: #379AAD;
+    justify-content: space-between;
+    padding: 8px 16px;
+    border-bottom: 1px solid #3C5B61; 
+    top: 0;
+    position: sticky;   
+}
+
+.user-avatar {
+    display: flex;
+    align-items: center;
+}
+
+.user-avatar img {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    border: 1px solid #8ED7E6
+}
+
+.user-avatar p {
+    font-size: 14px;
+    margin: 0 14px;
+    font-weight: bold;
+}
+
+.chat-actions {
+    display: flex;
+}   
+
+.chat-actions img {
+    border: 1px transparent;
+    border-radius: 10%;
+    background-color: transparent;
+    width: 25px;
+    outline: none;
+}   
+
+.chat-actions img:hover {
+    cursor: pointer;
+    background-color: #ffff;
+}   
+
+#chat section {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: auto;
+}
+
+#chat .msg {
+    max-width: calc(100% - 50px);
+    margin-bottom: 12px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#chat .receiver {
+    background-color: #47C6E0;
+    border-top-left-radius: 0;
+    align-self: flex-start;
+}
+
+#chat .sender {
+    background-color: #8ED7E6;
+    border-top-right-radius: 0;
+    align-self: flex-end;
+}
+
+#chat footer {
+    display: flex;
+    border-top: 1px solid #3C5B61;
+    background-color: white;
+}
+
+#chat footer span img {
+    cursor: pointer;
+    padding: 5px;
+}
+
+#chat footer span img:hover {
+    cursor: pointer;
+    border-radius: 80%;
+    background-color: #47C6E0;
+}
+
+.input-chat-msg {
+    border: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+.input-chat-msg::placeholder {
+    color: #c1c1c1;
+}
+
+.input-chat-msg:focus {
+    outline: none;
+}
+
+#chat ::-webkit-scrollbar {
+    width: 10px;
+}
+
+#chat ::-webkit-scrollbar-track {
+    background-color: #fbfbfb;
+}
+
+#chat ::-webkit-scrollbar-thumb {
+    background-color: #dddddf;
+    border-radius: 5px;
+}
+
+#chat ::-webkit-scrollbar-thumb:hover {
+    background-color: #cecece;
+}

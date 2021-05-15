@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <main>
+        <h1 class="text-center">Formulario de inscrição</h1>
+        <form>
+            <!-- TODO: Mostrar validacao -->
+            <div class="input-group">
+                <label for="name">
+                    Nome
+                </label>
+                <input 
+                    id="name"
+                    type="text"
+                    required
+                />
+            </div>
+
+            <div class="input-group">
+                <label for="email">
+                    E-mail
+                </label>
+                <input 
+                    id="email"
+                    type="email"
+                />
+            </div>
+
+            <div class="input-group">
+                <label for="age">
+                    Idade
+                </label>
+                <input 
+                    id="age"
+                    type="number"
+                    min="13"
+                />
+            </div>
+
+            <div class="input-group">
+                <label for="phone">
+                    Telefone
+                </label>
+                <input 
+                    id="phone"
+                    type="tel"
+                />
+            </div>
+
+            <div class="input-group">
+                <label for="password">
+                    Senha
+                </label>
+                <input 
+                    id="password"
+                    type="password"
+                />
+            </div>
+
+        
+            <div class="input-group">
+                <label>Genero</label>
+                <div class="input-group-center">
+                    <span>
+                        <input name="gender" id="m" type="radio" required>
+                        <label for="m">Masculino</label>
+                    </span>
+                    <span>
+                        <input name="gender" id="f" type="radio">
+                        <label for="f">Feminino</label>
+                    </span>
+                    <span>
+                        <input name="gender" id="na" type="radio">
+                        <label for="na">Não quero informar</label>
+                    </span>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>Desejo receber novidades por: </label>
+                <div class="input-group-center">
+                    <span>
+                        <input name="notification-sms" id="notification-sms" type="checkbox" >
+                        <label for="notification-sms">SMS</label>
+                    </span>
+    
+                    <span>
+                        <input  name="notification-email" id="notification-email" type="checkbox" >
+                        <label for="notification-email">E-mail</label>
+                    </span>
+    
+                    <span>
+                        <input  name="notification-phone" id="notification-phone" type="checkbox" >

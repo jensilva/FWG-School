@@ -1,0 +1,33 @@
+main {
+    margin: 10px auto;
+    width: 500px;
+    background-color: red;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.j-content-center {
+    display: flex;
+    justify-content: center;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3px;
+}
+
+.input-group-center {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.btn-text {
+
+}

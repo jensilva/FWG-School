@@ -1,0 +1,14 @@
+
+body {
+    background-color: #e4eed4;
+}
+
+#banner {
+    background-color: #fff;
+    width: 100%;
+    padding: 10px;
+}
+
+figcaption {
+    margin-top: 10px;
+}

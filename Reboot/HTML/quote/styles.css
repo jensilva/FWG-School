@@ -1,0 +1,23 @@
+body {
+    background-color: #411DA3;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#quote {
+    background-color: #F0E143;
+    width: 600px;
+    height: 400px;
+    border-radius: 1%;
+    display: inline-block;
+}
+
+.btn-social {
+    padding-left: 3%;
+    justify-content: center;
+    
+}
