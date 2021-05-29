@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Magic Number</title>
+    <script src="magic-number.js" defer></script>
+</head>
+<body>
+    <h1>Descubra o número</h1>
+    <p>Tente adivinhar o numero mágico, você tem <span id="max-attempt">10 tentativas</span></p>
+    <div>
+        <span id="tip"></span>
+        <label for="">Digite um numero mágico</label>
+        <input id="tentativa"
+         type="number" 
+         min="0" 
+         max="100"
+         required>
+        <button id="btn-enviar-tentativa">Tentar adivinhar</button>
+    </div>
+    <div>
+        <ul id="lista-tentativas"></ul>
+    </div>
+</body>
+</html>
