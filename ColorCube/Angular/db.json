@@ -14,6 +14,11 @@
       "id": 3,
       "name": "amarelo",
       "color": "#ffff80"
+    },
+    {
+      "name": "Verde agua",
+      "color": "#3eb4b6",
+      "id": 4
     }
   ]
 }

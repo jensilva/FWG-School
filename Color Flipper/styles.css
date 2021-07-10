@@ -1,0 +1,111 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #fbfbff;
+}
+
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    height: calc(100vh - 4rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    height: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 5px 15px #00004a;
+    background-color: #fff;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.menu h1 {
+    color: #a09bce;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.menu ul a {
+    padding: 15px;
+    text-decoration: none;
+    color: #181818;
+    font-weight: 700;
+}
+
+.menu ul:not(:first-child) a {
+    margin-left: 5px;
+}
+
+.menu ul a:hover {
+   background-color: #f5f5f5;
+}
+
+.menu ul a:active {
+    background-color: #eeecf3;
+    color: #777777;
+}
+
+.color-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.color-wrapper button {
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 2px solid #1b1a1a;
+    padding: 15px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1em;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.color-wrapper button:hover {
+    background-color: #0606061a;
+}
+
+.color-wrapper button:active {
+    background-color: #06060638;
+
+}
+
+.color-text-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1b1a1a;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+.color-text-wrapper h2, .color-text-wrapper span {
+    font-size: 2em;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+
+#color {
+    color: red;
+}
