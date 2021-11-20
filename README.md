@@ -13,7 +13,6 @@ It contains different projects such as:
 ____
 
 ### To-do List
-![alt text](http://i64.tinypic.com/2lb0rd5.png, "Todo")
 
 This project is a simple to-do task list with progress status, made in Vanilla Javascript and CSS.
 
@@ -25,7 +24,7 @@ Save the tasks at localStorage.
 ____
 
 ### ColorCube
-![alt text](http://i64.tinypic.com/2yjqb93.png, "ColorCube")
+
 
 This project is a CRUD at Local Storage, made in Vanilla Javascript with the libraries: Bootstrap & JQUERY.
 You can search by colour's name. If you click the color cube, you can see the details and edit it. To add a new color, 
@@ -36,7 +35,7 @@ Just download the files, no server needed.
 ____
 
 ### Agenda
-![alt text](http://i68.tinypic.com/2wptb9k.png, "Agenda")
+
 
 This project is a simple contact list, made in Vanilla Javascript with the libraries: Bootstrap, JQUERY & Font Awesome.
 It runs at the nodeJS environment with JSON-server for mock purposes.
