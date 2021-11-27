@@ -1,14 +1,25 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { getRandomInteger } from "../../utils/numbers";
-import { HeaderStyled } from "./style";
+import { HeaderStyled, HeaderTitle } from "./style";
 
-const Header = () => {
-    const colors = [getRandomInteger(0,255),getRandomInteger(0,255), getRandomInteger(0,255)];
 
-    return(<HeaderStyled colors={colors}>
-         <h1>Color Cube</h1>
+const getRGBColors = () => [
+    getRandomInteger(0,255), // R
+    getRandomInteger(0,255), // G
+    getRandomInteger(0,255) // B
+];
+
+const Header = () => {     
+    const colors = {
+        bgColor: getRGBColors(),
+        titleColor: getRGBColors()
+    }
+
+    return useMemo(() => (
+        <HeaderStyled bgColor={colors.bgColor}>
+             <HeaderTitle titleColor={colors.titleColor}>Color Cube</HeaderTitle>
     </HeaderStyled>
-       
+     ), []
     ) 
 }
 
