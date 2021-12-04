@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from "react";
 import { filter, noop } from "lodash";
-import { colors } from "./colors.mock";
+import { colors } from "./__mocks__/colors.mock";
 import { Props } from "./type";
+import { SearchInput } from "./style"
 
 const Search = (props: Props) => {
     const {onSearch = noop} = props;
@@ -14,7 +15,7 @@ const Search = (props: Props) => {
         console.log("A variavel searchValue mudou troxa:", filteredColor)
     }, [searchValue]);
 
-return <input value={searchValue} onChange= {(e) => {setSearchValue(e.target.value)}} />
+return <SearchInput value={searchValue} onChange={(e) => {setSearchValue(e.target.value)}} />
 
 }
 

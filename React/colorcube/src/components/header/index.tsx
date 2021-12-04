@@ -9,18 +9,16 @@ const getRGBColors = () => [
     getRandomInteger(0,255) // B
 ];
 
-const Header = () => {     
-    const colors = {
-        bgColor: getRGBColors(),
-        titleColor: getRGBColors()
-    }
 
-    return useMemo(() => (
+const colors = {
+    bgColor: getRGBColors(),
+    titleColor: getRGBColors()
+}
+
+const Header = () => (   
         <HeaderStyled bgColor={colors.bgColor}>
              <HeaderTitle titleColor={colors.titleColor}>Color Cube</HeaderTitle>
     </HeaderStyled>
-     ), []
-    ) 
-}
+)
 
 export default Header;
